@@ -1,8 +1,8 @@
 // Exemplo de como a estrutura do array de livros deve ser para funcionar com a função
 // (Caso o array venha de outro arquivo, você pode importá-lo)
-const livros = [
+ const livros = [
     {
-        titulo: "O Senhor dos Anéis",
+        titulo: "O Senhor dos Aneis",
         autor: "J.R.R. Tolkien",
         categoria: "Fantasia",
         paginas: 1200,
@@ -14,11 +14,18 @@ const livros = [
         categoria: "Distopia",
         paginas: 416,
         disponivel: false
+    },
+    {
+        titulo: "O Pequeno Principe",
+        autor: "Antoine de Saint-Exupéry",
+        categoria: "Infantil",
+        paginas: 96,
+        disponivel: true
     }
 ];
 
 // Função responsável por listar os livros no console
-export function listarLivros() {
+ function listarLivros() {
     console.log("\n=== LISTA DE LIVROS ===");
     
     // Verifica se o array está vazio
@@ -37,3 +44,4 @@ export function listarLivros() {
         console.log(`Disponibilidade: ${livro.disponivel ? "Disponível" : "Indisponível"}`);
     });
 }
+export { listarLivros, livros };

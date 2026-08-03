@@ -29,6 +29,29 @@ Siga os passos abaixo para rodar a aplicação em sua máquina:
    node index.js
    ```
 
+6. Visual do Menu
+
+Quando a aplicação é iniciada, o usuário visualiza o seguinte menu interativo no console:
+
+```text
+=================================
+SISTEMA DE BIBLIOTECA
+=================================
+
+1 - Listar livros  # Será usada quando o usuário digitar a opção 1 no menu inicial.
+2 - Buscar livro   # Será usada quando o usuário digitar a opção 2 no menu inicial, deverá digitar o nome do livro.
+3 - Listar livros disponíveis # Será usada quando o usuário digitar a opção 3 no menu inicial, monstra
+4 - Cadastrar livro # Será usada quando o usuário digitar a opção 4 no menu inicial, solicitar os dados ao usuário
+5 - Realizar empréstimo
+6 - Realizar devolução
+7 - Exibir estatísticas
+0 - Sair
+```
+O menu continuará a exibir até o usuário escholher a opção 0.
+
+
+
+
 ## 📂 Estrutura do Projeto
 
 ```text

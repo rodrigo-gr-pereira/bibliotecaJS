@@ -15,12 +15,16 @@ Criar uma aplicação JavaScript que gerencia uma biblioteca de forma prática e
 Siga os passos abaixo para rodar a aplicação em sua máquina:
 
 1. Certifique-se de ter o **Node.js** instalado.
-2. Abra o terminal na pasta raiz do projeto (`biblioteca-js/`).
+2. Abra o terminal na pasta raiz do projeto (`bibliotecaJS/`).
 3. Instale as dependências necessárias (caso utilize alguma biblioteca como `readline-sync`):
    ```bash
    npm install
    ```
-4. Execute o arquivo principal para iniciar o menu:
+4. Instale a biblioteca `prompt-sync` para permitir entradas do usuário pelo console:
+   ```bash
+   npm install prompt-sync
+   ```  
+5. Execute o arquivo principal para iniciar o menu:
    ```bash
    node index.js
    ```

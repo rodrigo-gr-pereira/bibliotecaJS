@@ -4,6 +4,8 @@ import { buscarLivro } from "./buscarLivro.js";
 import { listarDisponiveis } from "./listarDisponivel.js";
 import { cadastrarLivro } from "./cadastrarlivros.js";
 import { realizarEmprestimo } from "./realizarEmprestimo.js";
+import { realizarDevolucao } from "./realizarDevolucao.js";
+import { exibirEstatisticas } from "./exibirEstatisticas.js";
 
 const prompt = promptSync();
 
@@ -19,6 +21,8 @@ SISTEMA DE BIBLIOTECA
 3- Listar livros disponíveis
 4 - Cadastrar livro
 5- Realizar emprestimo
+6 - Realizar devolução
+7 - Exibir estatisticas
 0 - Sair
 `);
 
@@ -45,6 +49,15 @@ SISTEMA DE BIBLIOTECA
     case "5":
       const tituloParaEmprestimo = prompt("Digite o título do livro para empréstimo: ");
       realizarEmprestimo(tituloParaEmprestimo);
+      break;
+
+    case "6":
+      const tituloParaDevolucao = prompt("Digite o título do livro para devolução: ");
+      realizarDevolucao(tituloParaDevolucao);
+      break;
+
+    case "7":
+      exibirEstatisticas();
       break;
 
     case "0":

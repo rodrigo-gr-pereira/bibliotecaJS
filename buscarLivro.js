@@ -1,11 +1,11 @@
-import { livros } from "./listarLivros.js";
+import { dadosLivros } from "./dadosLivros.js";
 
 // Função principal exigida pelo requisito RF03
  function buscarLivro(titulo) {
 
   console.log("\n===LIVRO ENCONTRADO===");
     // Busca o livro ignorando diferenças entre maiúsculas e minúsculas
-    const livroEncontrado = livros.find(
+    const livroEncontrado = dadosLivros.find(
         livro => livro.titulo.toLowerCase() === titulo.toLowerCase()
     );
 

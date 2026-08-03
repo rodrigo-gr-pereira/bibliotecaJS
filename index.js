@@ -2,6 +2,7 @@ import promptSync from "prompt-sync";
 import { listarLivros } from "./listarLivros.js";
 import { buscarLivro } from "./buscarLivro.js";
 import { listarDisponiveis } from "./listarDisponivel.js";
+import { cadastrarLivro } from "./cadastrarlivros.js";
 
 const prompt = promptSync();
 
@@ -15,6 +16,7 @@ SISTEMA DE BIBLIOTECA
 1 - Listar livros
 2 - Buscar Livro
 3- Listar livros disponíveis
+4 - Cadastrar livro
 0 - Sair
 `);
 
@@ -33,7 +35,9 @@ SISTEMA DE BIBLIOTECA
     case "3":
       listarDisponiveis();
       break;
-      
+    case "4":
+      cadastrarLivro();
+      break;
     case "0":
       console.log("Saindo...");
       break;

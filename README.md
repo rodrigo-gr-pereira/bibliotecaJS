@@ -1,12 +1,17 @@
 # BibliotecaJS <br><br>
 Mini-projeto Avaliativo - Modulo 01 SCTEC. <br><br>
--Descrição<br><br>
-Projeto de nodernização uma de biblioteca. Com sistema gerênciavel de acervo. Uma aplicação JavaScript capaz de gerenciar os livros e usuários da biblioteca.<br><br>
--Objetivo<br><br>
+
+##Sobre o projeto<br><br>
+Projeto de nodernização de uma biblioteca. Com sistema gerênciavel de acervo. Uma aplicação JavaScript capaz de gerenciar os livros e usuários da biblioteca.<br><br>
+
+##Objetivo<br><br>
 Criar uma aplicação JavaScript que gerencia uma biblioteca.<br><br>
--Como Executar<br><br>
+
+##Como Executar<br><br>
 /////////////////////////////////////////<br><br>
--Estrutura do Projeto<br><br>
+
+##Estrutura do Projeto<br><br>
+
 biblioteca-js/<br><br>
  ├── index.js<br><br>
  ├── listarLivros.js<br><br>

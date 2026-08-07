@@ -1,4 +1,9 @@
 import promptSync from "prompt-sync";
+
+// Importação dos dados e da classe
+import { dadosLivros } from './dadosLivros.js';
+import { Livro } from './Livro.js';
+
 import { listarLivros } from "./listarLivros.js";
 import { buscarLivro } from "./buscarLivro.js";
 import { listarDisponiveis } from "./listarDisponivel.js";

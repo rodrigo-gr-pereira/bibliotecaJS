@@ -1,19 +1,28 @@
-import { dadosLivros } from "./dadosLivros.js";
+import { dadosLivros } from './dadosLivros.js'; // Ajuste o caminho se necessário
 
 function exibirEstatisticas() {
-    const totalLivros = dadosLivros.length;
-    if (totalLivros === 0) return console.log("Nenhum livro cadastrado.");
+  console.log("\n=== ESTATÍSTICAS DO SISTEMA ===");
 
-    const disponiveis = dadosLivros.filter(l => l.disponivel).length;
-    const indisponiveis = totalLivros - disponiveis;
-    const totalPaginas = dadosLivros.reduce((acc, l) => acc + l.paginas, 0);
-    const mediaPaginas = totalPaginas / totalLivros;
+  const totalLivros = dadosLivros.length;
 
-    console.log(`Total de livros cadastrados: ${totalLivros}`);
-    console.log(`Quantidade de livros disponíveis: ${disponiveis}`);
-    console.log(`Quantidade de livros indisponíveis: ${indisponiveis}`);
-    console.log(`Total de páginas: ${totalPaginas}`);
-    console.log(`Média de páginas por livro: ${mediaPaginas.toFixed(2)}`);
+  if (totalLivros === 0) {
+    console.log("Nenhum livro cadastrado no sistema.");
+    return;
+  }
+
+  // Cálculos utilizando métodos de array
+  const livrosDisponiveis = dadosLivros.filter(livro => livro.disponivel).length;
+  const livrosIndisponiveis = totalLivros - livrosDisponiveis;
+  
+  const totalPaginas = dadosLivros.reduce((acc, livro) => acc + livro.paginas, 0);
+  const mediaPaginas = totalPaginas / totalLivros;
+
+  // Exibição dos resultados no console
+  console.log(`Total de livros cadastrados: ${totalLivros}`);
+  console.log(`Quantidade de livros disponíveis: ${livrosDisponiveis}`);
+  console.log(`Quantidade de livros indisponíveis: ${livrosIndisponiveis}`);
+  console.log(`Total de páginas considerando todos os livros: ${totalPaginas}`);
+  console.log(`Média de páginas por livro: ${mediaPaginas.toFixed(2)}`);
 }
 
 export { exibirEstatisticas };
